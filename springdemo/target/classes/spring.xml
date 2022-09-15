@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+<!-- 
+<bean id="book" class="springdemowiprocc.springdemo.Book">
+		
+		<property name="isbnno" value="15"></property>
+		<property name="title" value="My life"></property>
+		<property name="cost" value="2000"></property>
+	
+</bean>
+<bean id="book" class="springdemowiprocc.springdemo.Book">
+		
+		<property name="isbnno" value="20"></property>
+		<property name="title" value="My world cup"></property>
+ 	
+</bean>
+ -->
+ <!-- <bean id="book3" class="com.demo.springcoremodule.Book">
+<constructor-arg type="int" value="44"></constructor-arg>
+<constructor-arg type="String" value="55"> </constructor-arg>
+</bean>
+
+<bean id="book2" class="springdemowiprocc.springdemo.Book">
+		
+		 <constructor-arg  index="1"   type="int"  value="20"></constructor-arg>
+		 <constructor-arg index="0" type="string"   value="57"></constructor-arg>
+</bean>
+ -->
+
+ <!-- 
+ 	<bean id="book" class="springdemowiprocc.springdemo.Book">
+ 		<property name="isbnno" value="55"></property>
+ 		<property name="title" value="My world cup"></property>
+ 	</bean>
+  
+  <bean id="library" class="springdemowiprocc.springdemo.Library">
+ 
+		 <property name="libraryname" value="central library"></property>
+		 <property name="address" value="My world m.g.road banglore"> </property>
+		 <property name="book" ref="book"></property>
+  -->
+<!-- 
+	<property name="book">
+		<bean id="innerbean" class="springdemowiprocc.springdemo.Book">
+ 		<property name="isbnno" value="55"></property>
+ 		<property name="title" value="My first inner bean"></property>
+ 	</bean>
+  </property>
+ </bean>
+<bean id="book" class="springdemowiprocc.springdemo.Book">
+ 		<property name="isbnno" value="55"></property>
+ 		<property name="title" value="My first world cup"></property>
+ 		<property name="volumes">
+ 		<array>
+ 			<value>1 in lords</value>
+ 			<value>2 in whankade</value>
+ 			<value>3 in chinnaswamy</value>
+ 		</array></property>
+ 	</bean>
+ 	 <property name="book" ref="book"></property>
+ 	 
+ 	 <vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv>
+ 
+ <bean id="book" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="50"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+
+<bean id="book1" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="51"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+
+<bean id="book2" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="52"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+ 
+ <bean id="library" class="springdemowiprocc.springdemo.Library">
+ 
+		 <property name="libraryname" value="central library"></property>
+		 <property name="address" value="My world m.g.road banglore"> </property>
+		 <property name="books">
+		 <list>
+		 <ref bean="book"/>
+		 <ref bean="book1"/>
+		 <ref bean="book2"/>
+		  
+		 <bean id="book4" class="springdemowiprocc.springdemo.Book">
+		 	
+		 	<property name="isbnno" value="59"></property>
+		 	<property name="title" value="my inner bean final world cup"></property>
+		 </bean>
+		 </list>
+		 </property>
+		 </bean>
+		 
+  <bean id="book" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="50"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+ -->
+
+<!-- 
+<bean id="book" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="51"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+<bean id="book1" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="51"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+
+<property name="book" ref="book"></property>
+
+
+
+ <bean id="library" class="springdemowiprocc.springdemo.Library" autowire="byName">
+ <property name="libraryname" value="central library"></property>
+		 <property name="address" value="My world m.g.road banglore"> </property>
+		 </bean>
+
+<bean id="library" class="springdemowiprocc.springdemo.Library" autowire="constructor"  scope="singleton"  >
+ 	   <constructor-arg name="libraryname" value="central library"></constructor-arg>
+		 <constructor-arg name="address" value="My world m.g.road banglore"> </constructor-arg>
+		
+ <bean id="library" class="springdemowiprocc.springdemo.Library"   scope="singleton" init-method="myInit" destroy-method="mydestroy"  >
+ 	   <constructor-arg name="libraryname" value="central library"></constructor-arg>
+		 <constructor-arg name="address" value="My world m.g.road banglore"> </constructor-arg>
+		 
+  
+ </bean>
+ 
+ -->
+ 
+ 
+ <!-- 
+ <bean id="library" class="springdemowiprocc.springdemo.Library" autowire="byName">
+ 		 <property name="libraryname" value="central library"></property>
+		 <property name="address" value="My world m.g.road banglore"> </property>
+		
+		 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+		
+		  <constructor-arg name="libraryname" value="central library"></constructor-arg>
+		 <constructor-arg name="address" value="My world m.g.road banglore"> </constructor-arg>
+		 
+autowire-default : no autowiring 
+byType: injects the bean through setter  , requires a single matching bean else throws noUniqueBeanException
+ byName:  autowire the bean with property name, if not found injects null 
+ constructor: injects dependencies through constructor only, same as by type and by name 
+ 
+ <context:annotation-config/>   
+  </beans> 
+ 
+ 
+ 
+ 
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ -->
+
+
+<bean id="book2" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="50"></property>
+<property name="title" value="My First World Cup"></property>
+</bean> 
+
+
+<bean id="book1" class="springdemowiprocc.springdemo.Book">
+<property name="isbnno" value="59"></property>
+<property name="title" value="My last world  cup"></property>
+</bean> 
+
+<bean id="library" class=" springdemowiprocc.springdemo.Library"  scope="singleton" init-method="myInit" destroy-method="mydestroy">
+<constructor-arg name="libraryname" value="Central Library"> </constructor-arg>
+<constructor-arg name="address" value="m.g road bangalore"></constructor-arg>
+</bean>
+
+
+ <context:annotation-config/>  
+</beans>
+
+ 
